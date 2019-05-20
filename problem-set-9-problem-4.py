@@ -61,8 +61,9 @@ def main():
                 '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
                 #Y       Z
                 '-.--', '--..']
-    usersentence = input("Please enter a sentence to be converted into morse code:")
-    for i in range(0, len(usersentence)):
+    userinput = input("Please enter a sentence to be converted into morse code:")
+    if userinput <= '0' or <= '9':
+        ord(morse_list)
 
 
-    main()
+main()
