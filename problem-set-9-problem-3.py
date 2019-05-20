@@ -26,14 +26,16 @@ HINTS
 
 IPO
 ==========
-INPUTS: 
-PROCESSES: 
-OUTPUTS: 
+INPUTS: a series of numbers
+PROCESSES: adds them all up
+OUTPUTS: outputs the sum off the numbers
 
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
-
+    numbers = input("Please enter series of single digit numbers with nothing seperating them: ")
+    sum = 0
+    for i in list(numbers):
+        sum = int(i) + sum
+    print(sum)
 main()

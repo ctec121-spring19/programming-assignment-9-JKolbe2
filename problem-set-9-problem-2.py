@@ -37,7 +37,8 @@ OUTPUTS:
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
-
+    sentence = input("Please enter a sentence you would like to see turned into pig latin: ")
+    for i in sentence.split(" "):
+        piglatin = i[1:] + i[0] + "ay"  
+        print(piglatin, end=" ")
 main()

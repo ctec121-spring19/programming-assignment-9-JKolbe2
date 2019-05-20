@@ -49,7 +49,20 @@ OUTPUTS:
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
+                  #     ,         .         0       1        2        3
+    morse_list = [' ', '--..--', '.-.-.-', '-----','.----', '..---', '...--',
+                #4        5        6        7        8        9
+                '....-', '.....', '-....', '--...', '---..', '----.',
+                #A     B       C       D      E    F       G      H   
+                '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....',
+                #I     J       K      L       M     N     O      P
+                '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.',
+                #Q       R      S      T    U      V       W      X
+                '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
+                #Y       Z
+                '-.--', '--..']
+    usersentence = input("Please enter a sentence to be converted into morse code:")
+    for i in range(0, len(usersentence)):
 
-main()
+
+    main()

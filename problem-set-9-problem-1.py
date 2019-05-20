@@ -14,14 +14,18 @@ each letter with no spaces.
 
 IPO
 ==========
-INPUTS: 
-PROCESSES: 
-OUTPUTS: 
+INPUTS: User inputs full name
+PROCESSES: Program determines what the initials are
+OUTPUTS: User's initials
 
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
+    name = input("Please enter your full name: ")
+    initials = ""
+    for word in name.split():
+        initials = initials + word[0] + "."
+    initials = initials.upper()
+    print(initials)
 
 main()
